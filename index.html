@@ -11,9 +11,17 @@
 <body>
  <div class="container">
 <div class="app-details">
-  <img src="money-exchange.png"/>
-  <h1 class="app-title">Currency Converter</h1>
+  <img  class="image" src="money-exchange.png"/>
+  <h1 class="app-title">CURRENCY CONVERTER</h1>
  </div>
+   <label for="amount" class="form-label">Amount:</label>
+   <input class="form-control" type="number" id="amount" value="100">
+   <div class="dropdown">
+     <select id="from-currency-select"></select>
+     <select id="to-currency-select"></select>
+   </div>
+   <button id="convert-button">Convert</button>
+   <p id="result"></p>
  </div>
 
   
