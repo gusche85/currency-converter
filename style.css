@@ -7,7 +7,7 @@
   outline: none;
 }
 body {
-  background-color: #000000;
+  background-color: #3f1390;
 }
 .wrapper {
   width: 90%;
@@ -20,10 +20,10 @@ body {
   padding: 2em;
   border-radius: 0.8em;
   background: 
-  linear-gradient(white 0 0) padding-box, 
+  linear-gradient(black 0 0) padding-box, 
   linear-gradient(to bottom,orange, black) border-box;
   border: 2px solid transparent;
-   -webkit-box-shadow: 0 0px 70px rgba(255, 201, 34, 0.5);
+  -webkit-box-shadow: 0 0px 100px rgba(255, 204, 0, 0.9);
 }
 .app-details {
   display: flex;
@@ -32,8 +32,7 @@ body {
 }
 
 .image {
-  width: 9.37em;
-  margin-bottom: 1.5em;
+  width: 10em;
 }
 
 .app-title {
@@ -45,22 +44,19 @@ body {
 label {
   display: block;
   font-weight: 600;
+  color: white;
 }
 
 input#amount {
   font-weight: 400;
   font-size: 1.2em;
   display: block;
+  background-color: black;
   width: 100%;
-  border-bottom: 2px solid #02002c;
-  color: #7a789d;
+  border-bottom: 2px solid yellow;
+  color: white;
   margin-bottom: 2em;
   padding: 0.5em;
-}
-
-input#amount:focus {
-  color: #9873fe;
-  border-color: #9873fe;
 }
 
 .dropdown {
@@ -76,14 +72,14 @@ select {
   font-size: 1em;
   border-radius: 0.2em;
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("arrow-down.svg");
+  -webkit-appearance: none; /*remove default arrow*/
+  -moz-appearance: none;  /*remove default arrow*/
+  background-image: url("arrow-down.svg");  /*replace with custom arrow*/
   background-repeat: no-repeat;
   background-position: right 15px top 50%, center;
   cursor: pointer;
   background-size: 20px 20px;
-  background-color: #9873fe;
+  background-color: #706d78;
   color: white;
 }
 select option {
@@ -93,7 +89,7 @@ select option {
 button {
   font-size: 1em;
   width: 100%;
-  background-color: #9873fe;
+  background-color: #706d78;
   padding: 1em 0;
   margin-top: 2em;
   border-radius: 0.3em;
@@ -106,6 +102,6 @@ button {
   text-align: center;
   margin-top: 1em;
   color: #02002c;
-  background-color: #e5dbff;
+  background-color: #fff9eb;
   padding: 0.8em 0;
 }
